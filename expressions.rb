@@ -1,4 +1,5 @@
-# Dijkstra's Two-Stack Algorithm for Expression Evaluation
+# Dijkstra's Two-Stack Algorithm for Expression Evaluation,
+# see examples in test/expressions_test.rb
 def evaluate(expression)
   operators = []
   values = []
@@ -21,6 +22,3 @@ def evaluate(expression)
 
   values.shift
 end
-
-p evaluate("(1+2)").to_i == 3
-p evaluate("(1+(3*(2+2)))").to_i == 13
