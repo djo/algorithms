@@ -1,4 +1,5 @@
-# Find the k-th smallest values in the array
+# Find the k-th smallest value in the array,
+# see test/find_kth.rb
 def find(array, k)
   raise 'out of bounds' if k >= array.size
   lo = 0
@@ -33,5 +34,3 @@ def partition(array, lo, hi)
   array[lo], array[j] = array[j], array[lo]
   j
 end
-
-p find([5, 12, 1, 0, 100, -10], 2)
