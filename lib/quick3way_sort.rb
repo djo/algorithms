@@ -1,5 +1,6 @@
-# Quick 3-way sort version where the array should be shuffled before
-# to protect against the worst case
+# Quick 3-way sort version,
+# to protect against the worst case an array should be shuffled before,
+# see examples in test/quick3way_sort_test.rb
 class Quick3way
   def initialize(array)
     @array = array
