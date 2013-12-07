@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../gcd'
+require_relative '../lib/gcd'
 
 class GcdTest < Test::Unit::TestCase
   def test_computing_the_gcd

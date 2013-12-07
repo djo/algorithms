@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../expressions'
+require_relative '../lib/expressions'
 
 class ExpressionsTest < Test::Unit::TestCase
   def test_evaluate

@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../find_kth'
+require_relative '../lib/find_kth'
 
 class FindKthTest < Test::Unit::TestCase
   def test_find
