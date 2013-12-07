@@ -1,36 +1,20 @@
-Node = Struct.new(:value, :next)
+# Work with a linked list structure,
+# see examples in test/linked_list_test.rb
+module LinkedList
+  Node = Struct.new(:value, :next)
 
-# Prepend new elements
-node = Node.new(11, nil)
-10.times { |i| node = Node.new(i, node) }
+  # Reverses a linked list in the iterative case
+  def self.reverse(first)
+    node = first
+    prev = nil
 
-# Append new elements
-node = Node.new(0, nil)
-last = node
-10.times { |i| last.next = Node.new(i, nil); last = last.next }
+    while node do
+      second = node.next
+      node.next = prev
+      prev = node
+      node = second
+    end
 
-# Deletes the kth element in a linked list
-def delete(first, index)
-  return nil if index == 0
-
-  node = first
-  (index - 1).times { node = node.next }
-  node.next = nil
-
-  first
-end
-
-# Reverses the list in the iterative case
-def reverse_i(first)
-  node = first
-  prev = nil
-
-  while node do
-    second = node.next
-    node.next = prev
-    prev = node
-    node = second
+    prev
   end
-
-  prev
 end

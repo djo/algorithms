@@ -1,4 +1,6 @@
-# Max-oriented priority queue based on the binary heap
+# Max-oriented Priority Queue based on the binary heap,
+# it requires ~lgN compares for insert and ~2lg N compares for remove the maximum,
+# see test/priority_queue_test.rb
 class PriorityQueue
   def initialize
     @pq = [nil]
@@ -42,4 +44,3 @@ class PriorityQueue
     end
   end
 end
-

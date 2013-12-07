@@ -1,3 +1,6 @@
+# Sink-based Heapsort algorithm,
+# uses fewer than 2N lg N + 2N compares,
+# see test/heap_sort_test.rb
 class Heap
   def initialize(array)
     @pq = array
@@ -36,5 +39,3 @@ class Heap
     @pq[i-1] < @pq[j-1]
   end
 end
-
-p Heap.new([10, 2, 11, -100, 100, 0, 0]).sort

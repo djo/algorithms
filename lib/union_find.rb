@@ -1,10 +1,16 @@
-# Union-find implementation (weighted quick-union)
-class UF
+# Union-find algorithm (weighted quick-union implementation),
+# the worst case order of growth is log N,
+# see examples in test/union_find_test.rb
+class UnionFind
   attr_accessor :ids
 
   def initialize(count)
     @ids = [*0..count-1]
     @sizes = Array.new(count, 1)
+  end
+
+  def connected?(id1, id2)
+    find(id1) == find(id2)
   end
 
   def find(id)
@@ -26,12 +32,3 @@ class UF
     end
   end
 end
-
-uf = UF.new(10)
-p uf.ids
-uf.union(1, 2)
-p uf.ids
-uf.union(3, 4)
-uf.union(1, 4)
-uf.union(5, 6)
-p uf.ids
