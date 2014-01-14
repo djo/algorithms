@@ -1,4 +1,4 @@
-# Bottom-up mergesort of a lined list without the auxiliary space,
+# Bottom-up mergesort of a lined list without an auxiliary space,
 # see test/merge_sort_bu_test.rb 
 class MergeSortBu
   Node = Struct.new(:value, :next)

@@ -28,6 +28,6 @@
 Development:
 
     bundle install
-    bundle rake test
+    bundle exec rake test
 
 Copyright (C) 2013 [Andrew Djoga](http://andrewdjoga.com), released under the MIT license.

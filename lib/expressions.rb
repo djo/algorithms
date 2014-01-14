@@ -1,15 +1,11 @@
 # Dijkstra's Two-Stack Algorithm for Expression Evaluation,
 # see examples in test/expressions_test.rb
-class Expressions
-  def initialize(expression)
-    @expression = expression
-  end
-
-  def evaluate
+module Expressions
+  def self.evaluate(expression)
     operators = []
     values = []
 
-    @expression.each_char do |ch|
+    expression.each_char do |ch|
       next if ch == '('
 
       if ch == ')'

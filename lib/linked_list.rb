@@ -1,4 +1,4 @@
-# Work with a linked list structure,
+# Work with the Linked List structure,
 # see examples in test/linked_list_test.rb
 module LinkedList
   Node = Struct.new(:value, :next)
@@ -8,7 +8,7 @@ module LinkedList
     node = first
     prev = nil
 
-    while node do
+    while node
       second = node.next
       node.next = prev
       prev = node
