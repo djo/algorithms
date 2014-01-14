@@ -26,6 +26,13 @@ class LinkedListTest < Test::Unit::TestCase
     assert_equal to_a(reversed), [3,2,1,0]
   end
 
+  def test_delete_dups
+    node = Node.new(0, Node.new(0, Node.new(1, Node.new(2, Node.new(1, nil)))))
+    assert_equal to_a(node), [0, 0, 1, 2, 1]
+    LinkedList.delete_dups(node)
+    assert_equal to_a(node), [0, 1, 2]
+  end
+
   private
 
   def to_a(first)
