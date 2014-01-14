@@ -33,6 +33,20 @@ class LinkedListTest < Test::Unit::TestCase
     assert_equal to_a(node), [0, 1, 2]
   end
 
+  def test_has_loop?
+    list = Node.new(0, Node.new(1, nil))
+    assert_equal LinkedList.has_loop?(list), false
+
+    list = Node.new(-1, nil)
+    list.next = list
+    assert_equal LinkedList.has_loop?(list), true
+
+    node = Node.new(-1, nil)
+    list = Node.new(0, node)
+    node.next = list
+    assert_equal LinkedList.has_loop?(list), true
+  end
+
   private
 
   def to_a(first)

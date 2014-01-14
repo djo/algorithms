@@ -34,4 +34,16 @@ module LinkedList
       node = node.next
     end
   end
+
+  # Detects if the linked list has a loop
+  def self.has_loop?(head)
+    slow = head
+    fast = head
+    while fast && fast.next
+      slow = slow.next
+      fast = fast.next.next
+      return true if slow == fast
+    end
+    return false
+  end
 end
