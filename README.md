@@ -22,7 +22,11 @@
 * [Max-oriented priority queue](lib/priority_queue.rb)
 
 #### Searching
+
 #### Graphs
+
+* [Depth-first search](lib/dfs.rb)
+
 #### Strings
 
 Development:
