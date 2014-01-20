@@ -26,6 +26,7 @@
 #### Graphs
 
 * [Depth-first search](lib/dfs.rb)
+* [Finding a directed cycle](lib/directed_cycle.rb)
 
 #### Strings
 

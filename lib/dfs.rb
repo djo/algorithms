@@ -1,7 +1,7 @@
 require 'set'
 
 # Depth-first search to find paths in an undirected graph.
-# The graph is represented as an adjacency list of integers,
+# The graph is represented as an adjacency list of Integers,
 # see examples in test/dfs_test.rb
 class DFS
   class Graph
