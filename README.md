@@ -1,4 +1,5 @@
-### Basic Algorithms written in Ruby
+## Basic Algorithms written in Ruby
+[![Build Status](https://secure.travis-ci.org/Djo/algorithms.png "Build Status")](http://travis-ci.org/Djo/algorithms)
 
 #### Fundamentals
 
@@ -35,4 +36,4 @@ Development:
     bundle install
     bundle exec rake test
 
-Copyright (C) 2013 [Andrew Djoga](http://andrewdjoga.com), released under the MIT license.
+Copyright (C) 2013-2014 [Andrew Djoga](http://andrewdjoga.com), released under the MIT license.
