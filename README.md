@@ -31,6 +31,8 @@
 
 #### Strings
 
+* [Least-significant-digit first string sort](lib/lsd.rb)
+
 Development:
 
     bundle install
