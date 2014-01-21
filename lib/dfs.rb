@@ -9,8 +9,7 @@ class DFS
 
     def initialize(size)
       @size = size
-      @adj = []
-      size.times { @adj << Set.new }
+      @adj  = Array.new(size) { Set.new }
     end
 
     def add_edge(v, w)
@@ -22,8 +21,8 @@ class DFS
   def initialize(graph, source)
     @graph = graph
     @source = source
-    @edge_to = [nil] * graph.size
-    @visited = [false] * graph.size
+    @edge_to = Array.new(graph.size, nil)
+    @visited = Array.new(graph.size, false)
     search(source)
   end
 

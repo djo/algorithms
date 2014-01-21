@@ -9,8 +9,7 @@ class DirectedCycle
 
     def initialize(size)
       @size = size
-      @adj = []
-      size.times { @adj.push(Set.new) }
+      @adj  = Array.new(size) { Set.new }
     end
 
     def add_edge(v, w)
@@ -19,11 +18,12 @@ class DirectedCycle
   end
 
   def initialize(graph)
-    @graph = graph
-    @visited = [false] * graph.size
-    @on_stack = [false] * graph.size
-    @edge_to = [nil] * graph.size
-    @cycle = []
+    @graph    = graph
+    @cycle    = []
+    @visited  = Array.new(graph.size, false)
+    @on_stack = Array.new(graph.size, false)
+    @edge_to  = Array.new(graph.size, nil)
+
     graph.size.times do |v|
       dfs(v) unless @visited[v]
     end
