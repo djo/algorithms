@@ -24,6 +24,8 @@
 
 #### Searching
 
+* [Check if a binary tree is balanced](lib/btree.rb)
+
 #### Graphs
 
 * [Depth-first search](lib/dfs.rb)
