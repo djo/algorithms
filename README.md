@@ -25,6 +25,7 @@
 #### Searching
 
 * [Check if a binary tree is balanced](lib/btree.rb)
+* [Find the 'next' node (in-order successor) of a given node in a binary search tree](lib/bst.rb)
 
 #### Graphs
 
